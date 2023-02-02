@@ -1,0 +1,23 @@
+[submodule "vanilla-extract"]
+path = submodules/vanilla-extract
+url = git@github.com:vanilla-extract-css/vanilla-extract
+branch = master
+shallow = true
+update = checkout
+fetchRecurseSubmodules = false
+
+[submodule "css-what"]
+path = submodules/css-what
+url = git@github.com:fb55/css-what
+branch = master
+shallow = true
+update = checkout
+fetchRecurseSubmodules = false
+
+[submodule "media-query-parser"]
+path = submodules/media-query-parser
+url = git@github.com:tbjgolden/media-query-parser
+branch = main
+shallow = true
+update = checkout
+fetchRecurseSubmodules = false
