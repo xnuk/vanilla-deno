@@ -1,5 +1,5 @@
 import type { MapLeafNodes, CSSVarFunction } from '../private/index.ts';
-import type { Properties, AtRule } from 'https://esm.sh/v106/csstype@3.1.1';
+import type { Properties, AtRule } from 'https://esm.sh/v106/csstype@3.1.1/index.d.ts';
 
 import type { SimplePseudos } from './simplePseudos.ts';
 

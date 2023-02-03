@@ -90,7 +90,7 @@ const main = async () => {
 		"@emotion/hash": new URL("./deps/emotion-hash.ts", dist),
 		"outdent": new URL("https://deno.land/x/outdent@v0.8.0/src/index.ts"),
 		"cssesc": new URL("./deps/cssesc.ts", dist),
-		"csstype": new URL(`${esmsh}/csstype@3.1.1`),
+		"csstype": new URL(`${esmsh}/csstype@3.1.1/index.d.ts`),
 		"chalk": new URL("./deps/chalk.ts", dist),
 		"css-what": new URL("./css-what/parse.ts", dist),
 		"media-query-parser": new URL(
