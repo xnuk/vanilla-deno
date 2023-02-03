@@ -1,6 +1,6 @@
 import cssesc from '../deps/cssesc.ts';
 import outdent from 'https://deno.land/x/outdent@v0.8.0/src/index.ts';
-import deepmerge from 'npm:deepmerge@4.3.0';
+import deepmerge from 'https://esm.sh/v106/deepmerge@4.3.0';
 
 import type {
   FontFaceRule,

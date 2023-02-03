@@ -83,22 +83,25 @@ const setBase = (base: Readonly<URL>) => ({
 const main = async () => {
 	const { resolve, relative } = setBase(new URL("./bundle/", import.meta.url))
 	const dist = new URL("./dist/", import.meta.url)
+	const esmsh = "https://esm.sh/v106"
 
 	const magic = inplace({
 		"@vanilla-extract/private": new URL("./private/index.ts", dist),
 		"@emotion/hash": new URL("./deps/emotion-hash.ts", dist),
 		"outdent": new URL("https://deno.land/x/outdent@v0.8.0/src/index.ts"),
 		"cssesc": new URL("./deps/cssesc.ts", dist),
-		"csstype": new URL("npm:csstype@3.1.1"),
+		"csstype": new URL(`${esmsh}/csstype@3.1.1`),
 		"chalk": new URL("./deps/chalk.ts", dist),
 		"css-what": new URL("./css-what/parse.ts", dist),
 		"media-query-parser": new URL(
 			"./media-query-parser/syntacticAnalysis.ts",
 			dist,
 		),
-		"deepmerge": new URL("npm:deepmerge@4.3.0"),
+		"deepmerge": new URL(`${esmsh}/deepmerge@4.3.0`),
 		"ahocorasick": new URL("./deps/ahocorasick.ts", dist),
-		"deep-object-diff": new URL("npm:deep-object-diff@1.1.9"),
+		"deep-object-diff": new URL(
+			`${esmsh}/deep-object-diff@1.1.9`,
+		),
 	})
 
 	await Deno.mkdir(dist)

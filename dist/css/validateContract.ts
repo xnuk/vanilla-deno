@@ -1,5 +1,5 @@
 import { Contract, walkObject } from '../private/index.ts';
-import { diff } from 'npm:deep-object-diff@1.1.9';
+import { diff } from 'https://esm.sh/v106/deep-object-diff@1.1.9';
 import chalk from '../deps/chalk.ts';
 
 const normaliseObject = (obj: Contract) => walkObject(obj, () => '');
